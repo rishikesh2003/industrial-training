@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap");
+* {
+	padding: 0px;
+	margin: 0px;
+	font-family: "Rubik", sans-serif;
+}
+body {
+	background-color: rgb(181, 238, 135);
+	overflow: hidden;
+}
+h1 {
+	font-size: 70px;
+}
+.content {
+	height: 90vh;
+	width: 100vw;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.card {
+	background-color: transparent;
+	width: 22%;
+	height: 60%;
+	border-radius: 15px;
+}
+.card-inner {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+.card-inner:hover {
+	transform: rotateY(180deg);
+}
+.card-front,
+.card-back {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	backface-visibility: hidden;
+	border-radius: 15px;
+	border: 5px solid rgb(156, 156, 156);
+	box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+.card-front {
+	background-color: rgb(255, 255, 255);
+	color: white;
+}
+.card-back {
+	background-color: rgb(255, 255, 255);
+	color: black;
+	transform: rotateY(180deg);
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 5px;
+}
+.bclr {
+	padding: 50px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	background-image: linear-gradient(
+		to right,
+		rgb(255, 193, 58),
+		rgb(255, 210, 125)
+	);
+	height: 10%;
+}
+.cont {
+	padding: 10px 40px;
+}
+.foot {
+	background-color: black;
+	color: white;
+	padding: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	display: flex;
+	justify-content: space-around;
+}

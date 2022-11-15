@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrackMyBook</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <h2 onclick="window.location.href='/index.html'">TrackMyBook.</h2>
+      <button onclick="window.location.href='/mylist.html'">MyList</button>
+    </div>
+    <div class="search-bar">
+      <input class="book" type="text" placeholder="Search" />
+      <button onclick="search()">Search</button>
+    </div>
+    <div class="books">
+      <h1>Search Results</h1>
+      <div class="book-container"></div>
+    </div>
+    <footer>Copyright &copy; 2022</footer>
+    <script src="index.js"></script>
+  </body>
+</html>
